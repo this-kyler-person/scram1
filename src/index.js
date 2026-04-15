@@ -36,7 +36,7 @@ const fastify = Fastify({
 });
 fastify.register(basicAuth, {
     validate: async (username, password) => {
-        if (username !== 'kyler' || password !== 'notpassword') {
+        if (username !== 'username' || password !== 'password') {
             throw new Error('Unauthorized');
         }
     },
